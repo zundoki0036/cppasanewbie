@@ -1,0 +1,27 @@
+Ý tưởng: đặt x1,x2,x3,x4 là 4 số bất kỳ
+
+1. Xét điều kiện 2 số bất kỳ cộng lại chia hết cho a: lấy đại các số và xét:
+- x1 + x2 % a == 0 (1)
+- x2 + x3 % a == 0 (2)
+Để ý, ta lấy (2) - (1) => x3 - x1 % a == 0
+            <=> ((q3 - q1)*a + (r3 - r1)) % a == 0
+            => r3 == r1 thì (q3-q1)*a mới chia hết cho a được
+Tương tự với các cặp số còn lại => 4 số phải có cùng số dư khi chia cho a
+
+2. Xét 3 số rnd cộng lại chia hết cho b: làm tương tự bước 1
+(x1 + x2 + x3) - (x2 + x3 + x4) = x1 - x4 % b == 0 => r4 == r1
+=> 4 số phải cùng số dư khi chia cho b
+
+3. Nhận xét: chọn 2 số bất kì 
+Từ Bước 1 và 2, ta biết rằng hiệu của hai số bất kỳ đều phải chia hết cho cả a và b
+Một số mà vừa chia hết cho a và b thì nó phải chia hết cho BCNN của a & b (gọi số này là L)
+=> Hiệu của hai số bất kỳ trong 4 số đó đều chia hết cho L
+=> 4 số phải cùng số dư khi chia cho L (tam xuất)
+
+4. Tìm số dư chung R của 4 số khi chia cho L
+a/ Xét 4 số có dạng xj = k*L + R (k = j-1, k >= 0) (sở dĩ có điều này vì chúng cùng số dư R, và tam xuất từ công thức B1, B2)
+    Nếu cho k = 0 thì R > 0. Xét j từ 1 tới 4 -> k từ 0 tới 3, ta có tổng 4 số S = 6L + 4R
+b/ Ta lấy 2 số nhỏ nhất: x1 + x2 = (R) + (L+R) = L + 2R
+L chia hết cho a => Để tổng này chia hết cho a, 2R % A == 0
+Tương tự lấy 3 số nhỏ nhất cộng lại => 3R % A == 0
+Xem tiếp: https://docs.google.com/document/d/1awOjS4qL2gxDR-u6x16jRKFu3YJs9n9Z2riH-PZymzo
