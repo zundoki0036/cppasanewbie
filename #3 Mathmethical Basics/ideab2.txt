@@ -22,6 +22,7 @@ Một số mà vừa chia hết cho a và b thì nó phải chia hết cho BCNN 
 a/ Xét 4 số có dạng xj = k*L + R (k = j-1, k >= 0) (sở dĩ có điều này vì chúng cùng số dư R, và tam xuất từ công thức B1, B2)
     Nếu cho k = 0 thì R > 0. Xét j từ 1 tới 4 -> k từ 0 tới 3, ta có tổng 4 số S = 6L + 4R
 b/ Ta lấy 2 số nhỏ nhất: x1 + x2 = (R) + (L+R) = L + 2R
-L chia hết cho a => Để tổng này chia hết cho a, 2R % A == 0
-Tương tự lấy 3 số nhỏ nhất cộng lại => 3R % A == 0
+L chia hết cho a => Để tổng này chia hết cho a, 2R % a == 0
+Tương tự lấy 3 số nhỏ nhất cộng lại => 3R % b == 0
+
 Xem tiếp: https://docs.google.com/document/d/1awOjS4qL2gxDR-u6x16jRKFu3YJs9n9Z2riH-PZymzo
