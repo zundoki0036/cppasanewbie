@@ -2,9 +2,12 @@
 using namespace std;
 
 long long ucln(long long a, long long b) {
-    if (a == 0 || b == 0) return a+b;
-    if (a>b) return ucln(a-b,b);
-    return ucln(a,b-a);
+    while (b != 0) {
+        long long r = a % b;
+        a = b;
+        b = r;
+    }
+    return a;
 }
 
 bool snt(long long x) {
@@ -46,4 +49,5 @@ int main () {
         }
     }
     cout << count;
+
 }
