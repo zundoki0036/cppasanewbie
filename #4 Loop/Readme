@@ -1,0 +1,16 @@
+Bài 1. Tìm 2 số đối xứng với nhau có tổng bằng n, nếu có nhiều đáp án thì xuất đại cái nào cũng được, nếu không có đáp án thì ghi -1.
+
+Bài 1B. Đề như trên nhưng yêu cầu sử dụng đệ quy, có yêu cầu TLE thấp, sẽ up sau 🥲
+
+Bài 2. Khi bạn đốt cháy hết 1 cây nến thì sẽ còn sót lại phần sáp thừa. Có thể dùng x phần sáp thừa này để tạo thành 1 cây nến mới. Rồi lại đến lượt cây nến mới này được đốt và để lại phần thừa khác. 
+Giả sử, ban đầu bạn có candles cây nến tổng cộng có bao nhiêu cây nến mà bạn có thể đốt? Biết rằng bạn có thể tạo ra những cây nến mới từ những phần sáp thừa
+VD: Ban đầu bạn có candles = 5 cây nến, và cứ x = 2 phần thừa sẽ tạo được 1 cây nến mới, khi đó output của bài toán là 9, nghĩa là bạn có thể đốt tổng cộng 9 cây nến.
+
+INPUT
+- Một số nguyên candles là số cây nến ban đầu bạn có với 1 ≤ candles ≤ 15
+- Một số nguyên x chỉ số phần sáp thừa mà bạn có thể dùng để tạo ra một cây nến mới, 2 ≤ x ≤ 5
+Ví dụ: 15 4
+
+OUTPUT: Một số nguyên chỉ số cây nến có thể đốt
+VD: 19
+ 	 
