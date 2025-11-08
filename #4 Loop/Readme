@@ -14,3 +14,4 @@ Ví dụ: 15 4
 OUTPUT: Một số nguyên chỉ số cây nến có thể đốt
 VD: 19
  	 
+Bài 3. Nhập 1 loạt các số và kết thúc loạt bằng 0. Kiểm tra xem số nguyên này có phải là lũy thừa với số mũ nguyên của số nguyên khác hay không.
