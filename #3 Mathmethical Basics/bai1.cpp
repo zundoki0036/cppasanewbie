@@ -9,7 +9,7 @@ int ucln(int a, int b){
 }
 
 //thuat toan neu bi tran so
-long long ucln(long long a, long long b) {
+long long ucln2(long long a, long long b) {
     while (b != 0) {
         long long r = a % b;
         a = b;
@@ -24,3 +24,4 @@ int main (){
     cout << "BCNN: " << (a/ucln(a,b))*b;
 
 }
+
