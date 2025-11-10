@@ -17,6 +17,8 @@ Tương tự với các cặp số còn lại => 4 số phải có cùng số d�
 3. Nhận xét: chọn 2 số bất kì 
 Từ Bước 1 và 2, ta biết rằng hiệu của hai số bất kỳ đều phải chia hết cho cả a và b
 Một số mà vừa chia hết cho a và b thì nó phải chia hết cho BCNN của a & b (gọi số này là L)
+// Chứng minh: x1 x3 là 2 số khác nhau, mà chúng lại có cùng R 
+=> muốn x1, x3 chia hết cho a và b mà lại khác nhau thì chỉ còn cách là 2 số có dạng kL + r (k tăng dần cho mỗi biến thì mới khác nhau)
 => Hiệu của hai số bất kỳ trong 4 số đó đều chia hết cho L
 => 4 số phải cùng số dư khi chia cho L (tam xuất)
 
@@ -28,4 +30,5 @@ L chia hết cho a => Để tổng này chia hết cho a, 2R % a == 0
 Tương tự lấy 3 số nhỏ nhất cộng lại => 3R % b == 0
 
 Xem tiếp: https://docs.google.com/document/d/1awOjS4qL2gxDR-u6x16jRKFu3YJs9n9Z2riH-PZymzo
+
 
