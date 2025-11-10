@@ -1,3 +1,5 @@
+Bài 2: cho 04 số nguyên dương phân biệt, trong đó tổng của 02 số bất kỳ sẽ chia hết cho a và tổng của 03 số bất kỳ sẽ chia hết cho b. Tổng nhỏ nhất của 04 số nguyên dương đó là bao nhiêu. Nhập vào bàn phím 2 số nguyên dương a, b lớn hơn 0 và bé hơn 200
+
 Ý tưởng: đặt x1,x2,x3,x4 là 4 số bất kỳ
 
 1. Xét điều kiện 2 số bất kỳ cộng lại chia hết cho a: lấy đại các số và xét:
@@ -26,3 +28,4 @@ L chia hết cho a => Để tổng này chia hết cho a, 2R % a == 0
 Tương tự lấy 3 số nhỏ nhất cộng lại => 3R % b == 0
 
 Xem tiếp: https://docs.google.com/document/d/1awOjS4qL2gxDR-u6x16jRKFu3YJs9n9Z2riH-PZymzo
+
