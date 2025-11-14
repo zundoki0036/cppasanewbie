@@ -1,0 +1,22 @@
+Bạn đang đứng trước một cái giếng ma thuật, trên đó có ghi 2 số nguyên dương a và b. Mỗi lần ném một viên sỏi xuống giếng, nó sẽ trả về cho bạn a*b đồng tiền 
+vàng, sau đó a và b sẽ tăng lên 1. Vậy nếu bạn có n viên sỏi thì sẽ kiếm được bao nhiêu đồng tiền vàng?
+
+Ví dụ: Cho a = 1, b = 2 và n = 2, output của bài toán là 8, vì sau khi ném viên sỏi thứ nhất bạn sẽ có được 2 đồng tiền vàng.
+Sau đó a tăng lên là 2 và b tăng lên là 3, khi ném đến viên thứ 2 thì cái giếng sẽ trả về cho bạn thêm 6 đồng tiền vàng nữa, như vậy cả thảy sẽ được 8 đồng.
+
+INPUT
+- 2 số nguyên a và b với 1 ≤ a,b ≤ 2000
+- Số nguyên không âm n với 0 ≤ n ≤ 5 là số viên sỏi mà bạn có được
+
+OUTPUT
+- Một số nguyên
+
+GIẢI THÍCH CÁCH XÂY DỰNG HÀM - FORMULA FORMATION EXPLANATION
+- Bước 1: xác định các biến số, kiểu trả về: a,b,n đều là số nguyên + các điều kiện như đề bài nêu
+- Bước 2: tìm trường hợp đơn giản nhất (các khả năng ra liền kết quả)
+Để ý: khi ném 0 lần hoặc input không thoả đề thì trả về 0
+    Khi ném 1 lần thì trả về a*b
+- Bước 3: tự cho ví dụ và giải thực tế bài này (không viết code)
+- Bước 4: lần ngược các bước giải theo chiều thuần sang chiều nghịch để quy về điểm dừng
+=> công thức đệ quy
+
