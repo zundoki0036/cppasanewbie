@@ -10,5 +10,13 @@ CÁCH XÂY DỰNG HÀM (FUNCTION BUILDING)
 - Xác định đầu vào và kiểu dữ liệu: int
 - Tìm trường hợp đơn giản nhất: mọi số bên trong đều là số lẻ
 Nghĩa là khi tách từng số bằng phép chia dư (gọi là x) mà không tìm được x nào chẵn thì số n là số lẻ
-=> khi n == 0 thì nó là số lẻ (khi đã chia hết) (để ý n dương nên n==0 trả về 0)
+=> khi n == 0 (hiểu là không còn chữ số nào tồn tại) thì nó là số lẻ (khi đã chia hết) (để ý n dương nên n==0 trả về 0)
 => bắt đầu tách từng số 1 và kiểm tra chúng thử
+
+TỔNG QUAN NHƯ SAU:
+- Cho 1 số n, nếu n == 0 thì trả 0
+- Còn không xét tiếp từ chữ số cuối cùng xem nó có chẵn không bằng cách chia dư cho 10
+- Sau đó loại bỏ chữ số cuối đó bằng cách chia lấy nguyên cho 10, và lặp lại quá trình kiểm tra này đến khi:
+  + tìm được số chẵn: trả về 1 và truy về lần gọi gốc theo stack
+  + không tìm được số chẵn nào: khi n == 0 (hết chữ số còn lại để lấy) thì trả về 0 và truy về lần gọi gốc theo stack
+=> hàm đệ quy cần tìm
