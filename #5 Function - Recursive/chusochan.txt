@@ -1,0 +1,14 @@
+Viết chương trình cho biết số nguyên dương n (ko quá 10000) có chữ số chẵn nào hay không?
+Nếu trong n có chữ số chẵn, xuất ra TRUE, ngược lại xuất ra FALSE
+
+VÍ DỤ
+9359 FALSE
+1491 TRUE
+4401 TRUE
+
+CÁCH XÂY DỰNG HÀM (FUNCTION BUILDING)
+- Xác định đầu vào và kiểu dữ liệu: int
+- Tìm trường hợp đơn giản nhất: mọi số bên trong đều là số lẻ
+Nghĩa là khi tách từng số bằng phép chia dư (gọi là x) mà không tìm được x nào chẵn thì số n là số lẻ
+=> khi n == 0 thì nó là số lẻ (khi đã chia hết) (để ý n dương nên n==0 trả về 0)
+=> bắt đầu tách từng số 1 và kiểm tra chúng thử
