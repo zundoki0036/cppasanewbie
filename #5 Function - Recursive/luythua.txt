@@ -17,7 +17,8 @@ VÍ DỤ
 XÂY DỰNG HÀM:
 - Đọc đề xác định tham số và kiểu dữ liệu
 - Tìm trường hợp đơn giản nhất: nếu m bằng 0 trả về 0, n = 1 trả về m, n = 0 trả về 1
-Để ý: cứ lùi số mũ về cho đến khi đạt được điểm dừng như trên
+Viết ngoài nháp thử 5^3 = 5 * 5 * 5
+Để ý: cứ lùi số mũ về cho đến khi đạt được điểm dừng như trên (ở đây ta thấy số 5 trước hoa thị đầu tiên biểu thị cho n = 1)
 => lấy m nhân cho chính nó n lần đến khi n thoả thì thôi
 Ví dụ 5 mũ 3
 lần 1: kiểm tra n không thoả
