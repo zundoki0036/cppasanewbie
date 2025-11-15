@@ -21,7 +21,7 @@ OUTPUT
 LẬP HÀM:
 - Bước 1: xác định tham số và kiểu DL
 - Bước 2: tìm điều kiện đơn giản nhất: nếu 2 số mà bằng 0 thì trả về 0
-nếu 2 số mà có 1 trong 2 số bằng 0 thì trả về số còn lại
+nếu 2 số mà có 1 trong 2 số bằng 0 thì trả về số còn lại (trong code của mình không có nhưng nếu mn thêm vào cũng không sai đâu nhé)
 - Bước 3: lập hàm:
 + Bắt đầu tách chữ số cuối của 2 số x,y
 + Nếu cả 2 số khác 0 mà 2 số cộng lại bé hơn 10 thì lấy 2 số đó cộng lại lưu vào dưới dạng số đảo
