@@ -1,0 +1,17 @@
+Ta phải úp mặt vào tường trong lúc các bạn đi trốn. Ta đếm 'năm, mười, mười lăm, hai mươi, hai lăm.....' cho đến khi đạt con số lớn nhất mà nhỏ hơn
+giá trị cho trước nhất thì bắt đầu quay mặt ra đi tìm các bạn của mình. 
+Viết chương trình đến số 5-10
+INPUT: Một số nguyên dương lớn hơn 5
+OUTPUT: Nhiều số nguyên dương là bội của 5. 
+VÍ DỤ
+31  5
+    10
+    15
+    20
+    25
+    30
+
+XÂY DỰNG HÀM: 
+- Xác định in/out/kiểu DL
+- Tìm trường hợp đơn giản nhất: n <= số đếm thì dừng
+=> Xác định hàm đệ quy: đặt x là 1 số bất kì, tăng lên 1 lần gọi đệ quy 5 đơn vị
