@@ -4,7 +4,7 @@ int main(){
     int thang, nam; 
     std::cin >> thang >> nam;
     int lanamnhuan = (thang == 2) && ((nam % 4 == 0 && nam % 100 != 0) || (nam % 400 == 0));
-    int a[12] = {31,28,31,30,31,30,31,31,30,31,30,11};
+    int a[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
     std::cout << a[thang - 1] + lanamnhuan;
     return 0;
 }
