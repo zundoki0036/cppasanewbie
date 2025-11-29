@@ -1,22 +1,28 @@
 #include <iostream>
 using namespace std;
-#define MX 999999
+#define MX 1000000
 
 long long a[MX];
 
 void mang(long long n){
     for (long long i = 0; i < n; i++) {
         cin >> a[i];
-        if (i == (n-1)) for (long long j = (n-1); j>=0; j--) {
-            cout << a[j] << endl;
-        }
+    }
+}
+
+void xuat(long long n) {
+    for (long long j = (n-1); j>=0; j--) {
+        cout << a[j] << "\n";
     }
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     long long n; cin >> n;
+    if (n>=1000000) return 0;
     mang(n);
-    return 0;
+    xuat(n);
 }
 
 /*THUẬT TOÁN KHÔNG PHẢI VẤN ĐỀ
