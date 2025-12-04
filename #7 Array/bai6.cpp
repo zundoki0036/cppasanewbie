@@ -16,15 +16,15 @@ int main() {
     int current = 1;
     for (int i = 1; i < n; i++) {
         while (true) {
-            if ((a[i]-s) > z) {
-                current--;
-                s = a[k+1];
-                k++;
-            } else break;
+            if ((a[i]-s) > z) { // Lấy thời gian hiện tại trừ thời gian gai cũ nhất
+                current--;      // Nếu > z (hết hạn) -> Giảm số lượng gai
+                s = a[k+1];     // Cập nhật mốc thời gian của cái gai cũ tiếp theo
+                k++;            // Dịch chuyển con trỏ k lên
+            } else break;       // Nếu cái cũ nhất chưa hết hạn -> Dừng kiểm tra
         }
 
-        tong += x + y*current;
-        current++;
+        tong += x + y*current; // Tổng = Sát thương cũ + (Base + Bonus * số gai đang có)
+        current++;             // Sau khi tính xong, đòn này để lại thêm 1 gai mới
     }
 
     cout << tong;
